@@ -1,11 +1,16 @@
 import React from "react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 function PersonForm({ persons, setPersons }) {
   const [newPerson, setNewPerson] = useState("");
   const [newNumber, setNewNumber] = useState("");
   return (
-    <section>
+    <motion.section
+      initial={{ scaleY: "0" }}
+      animate={{ scaleY: "100%" }}
+      transition={{ duration: 0.3 }}
+    >
       <form className="flex flex-col border-solid border-2 px-[5vh] py-[10vh] font-sans">
         <h1 className="flex justify-center mb-[6vh] mt-[-5vh] font-['Alegreya'] text-3xl">
           Sign In
@@ -36,7 +41,7 @@ function PersonForm({ persons, setPersons }) {
         <p className="flex justify-center mt-[1vh] text-xs">Or</p>
         <button className=" border-solid border-2 mt-[1vh]">Sign Up</button>
       </form>
-    </section>
+    </motion.section>
   );
 }
 
