@@ -48,7 +48,7 @@ function PersonForm({ persons, setPersons }) {
         <motion.div
           whileHover={{ scale: [null, 1.2, 1] }}
           transition={{ duration: 0.3 }}
-          className=" border-solid border-2 mt-[1vh] text-center border-[#6A8D92] bg-[#221B22] rounded-md font-medium text-[#D5E2D0]"
+          className=" border-solid border-2 mt-[1vh] text-center border-[#6A8D92] bg-[#221B22] rounded-md font-medium text-[#D5E2D0] cursor-pointer"
         >
           Sign Up
         </motion.div>
