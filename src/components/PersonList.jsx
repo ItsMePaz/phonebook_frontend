@@ -12,7 +12,7 @@ function PersonList({ persons, setPersons }) {
       .catch((error) => console.log(error));
   }, []);
   return (
-    <ul>
+    <ul className="hidden">
       {persons.map((person) => (
         <li key={person.id}>{person.name}</li>
       ))}

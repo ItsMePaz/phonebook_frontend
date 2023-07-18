@@ -6,7 +6,7 @@ import { useState } from "react";
 function App() {
   const [persons, setPersons] = useState([]);
   return (
-    <div>
+    <div className="grid h-screen place-items-center">
       <PersonList persons={persons} setPersons={setPersons} />
       <PersonForm persons={persons} setPersons={setPersons} />
     </div>
